@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>样式表</title>
+  <!--JS样式-->
+    <script src="script1.js"></script>
+    <!--<script >
+        alert("内部使用JS")
+    </script>-->
+
+    <!--<外部样式表>-->
+    <!--<link rel="stylesheet" type="" href="a.css">-->
+    <!--文档样式表-->
+    <style type="text/css">
+
+
+    /*动画*/
+p{
+    width: 100px;
+    height: 100px;
+    background-color: antiquewhite;
+}
+p:hover{
+    width: 200px;
+    height: 200px;
+    background-color: burlywood;
+    transition-delay: 150ms;/*延迟*/
+    transition-duration: 500ms;/*动画时间*/
+    transition-timing-function: ease-in-out;/*有很多参数 ，此参数表示开始慢中间快结尾慢*/
+
+}
+    .class1{
+        border: 1px solid black;
+        background: aquamarine;
+        padding: 100px 50px 100px  200px;/*内边距*/
+        margin: 100px 50px 100px  200px;/*外边距*/
+    }
+
+
+        *{/*所有元素 all*/}
+        a{/*根据类型选择元素，此仅对a标签影响 <a>*/  }
+        .class{/*对类元素影响，类名可自定义，在下面要<a class="class1">*/}
+        #id1{/*对ID影响，<a id="id1">*/}
+        [herf]{/*对使用此属性的控件影响，<a herf="地址">*/}
+        a:hover{/*对该控件的某一动作影响，<a>*/}
+    </style>
+</head>
+<body>
+
+<!--元素内嵌样式表
+<a style="font-size: 20px ">字体变大</a>
+<a style="font-size: 20px ;color: #ff4130">字体变大，颜色变红</a>
+
+&lt;!&ndash;文档样式表，样式于title下的style里   【需注释外部样式表】&ndash;&gt;
+<a>字体变大，颜色变蓝</a>
+
+&lt;!&ndash;外部样式表，样式于title下的link到目录下CSS文件里   【需注释样式表】&ndash;&gt;
+<a>字体变大，颜色变绿</a>-->
+<div class="class1">盒子</div>
+<p>P标签动画</p>
+</body>
+</html>

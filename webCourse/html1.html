@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<!--ctrl+/    Ctrl+shift+/注释-->
+<html >
+<!--<html lang="en">以HTML开始，，默认语言为英语，“zh“中文-->
+<head><!--head提供有关文档内容和帮助信息-->
+    <meta charset="UTF-8"><!--编码-->
+    <title>标题</title><!--标题-->
+</head>
+<body>
+<!--显示内容-->
+
+
+<!--herf超链接-->
+<a href="https://www.baidu.com" target="_self"> 大家好</a><!--target="_blank"重开一页显示 target="_self"当页显示-->
+<b>粗体</b>
+<em>斜体</em>
+<u>下划线</u>
+<s>中划线</s>
+<br/>br回车<br/>
+1*****************************************************************************
+    <table border="1px"><!--表格-->
+        <thead><!--thead 表头-->
+        <tr>
+            <th>标题</th><!--th，标题栏，加粗，-->
+            <th>标题</th>
+            <th>标题</th>
+        </tr>
+        </thead>
+        <tbody></tbody><!--表体-->
+        <tr>
+            <td rowspan="2">列合并</td>
+            <td>第二列</td>
+            <td>第三列</td>
+        </tr>
+        <tr>
+            <td colspan="2">行合并</td>
+        </tr>
+        <tfoot></tfoot><!--表尾-->
+    </table>
+2**********************************************************************************************
+    <!--有序标签-->
+    <ol type="1" ><!--type序列表体排列类型，数字，字母，罗马……-->
+        <li>a</li>
+        <li>b</li>
+        <li>c</li>
+    </ol>
+    <ol reversed><!--reversed降序，默认升序-->
+        <li>a</li>
+        <li>b</li>
+        <li>c</li>
+    </ol>
+    <!--无序标签-->
+    <ul>
+        <li>a</li>
+        <li>b</li>
+    </ul>
+
+3***************************************************************************************
+
+<form>
+    <input type="text" value="自填充内容" >
+    <input placeholder="提示内容，占位符">
+    <input maxlength="5" placeholder="只能输入5个"><!--最大限制输入位数-->
+    <input size="50" placeholder="长度为50行"><!--输入框长度-->
+    <br/>
+    <input value="只读不允许修改内容"  readonly><!--只读 不允许写入-->
+    <input type="password" placeholder="密码">
+    <input type="number" placeholder="随意数字" >
+    <input type="number" min="0" max="100" step="10" value="50"><!--0-100数字-->
+    <br/>
+    <input type="range" min="-100" max="100">
+    <input type="range" min="-100" max="100" step="20">
+    <input type="range" min="-100" max="100" step="20" value="50">
+    <br/>
+    <textarea >多行文本框</textarea>
+    <textarea rows="20" cols="30">最小20行30列的多行文本框</textarea>
+    <br/>
+    <BUTTON onclick="" n> 与JS按钮绑定事件的按钮</BUTTON>
+    <input type="button" value="普通按钮">
+    <input type="submit" value="提交form表单">
+    <input type="checkbox">单选择框
+    <br/>
+    <input type="radio"  name="a" checked>多选一默认选择
+    <input type="radio"  name="a">多选一
+    <input type="radio"  name="a">多选一
+    <br/>
+    强制选项：
+    <select>
+        <option>选择1</option>
+        <option>选择2</option>
+    </select>
+    可输入选项：
+    <input type="text" list="datalist">
+    <datalist  id="datalist">
+        <option>选择a</option>
+        <option>选择b</option>
+    </datalist>
+
+</form>
+4**************************************************************************************
+<form enctype="multipart/form-data"><!--上传文件form必须加这个属性-->
+    <!--无效果<input type="email">邮箱<input type="tel" >电话<input  type="url">地址<input  type="search">搜索-->
+    <input  type="color">颜色
+
+    <input  type="file" >选择一个文件
+    <input  type="file" multiple>选择多个文件
+    <input  type="file" REQUIRED>必须选择文件
+
+    <input  type="image" src="1.jpg" width="40px">图片按钮
+    <input  type="date">日期
+    <input  type="time">时间
+    <input  type="hidden" value="内容">隐藏
+</form>
+5********************************************************************************************
+<br/>图片超链接
+<br/>
+<a href="html1.html">
+    <img  src="1.jpg" width="300px"  alt="无图时显示">
+</a>
+<br/>
+<br/>
+利用form点击图片可在地址栏获取其位置
+<br/>
+<form>
+<input type="image" width="300px" src="1.jpg" >
+</form>
+<br/>
+分区响应图
+<br/>
+<img  src="1.jpg" width="300px"  alt="无图时显示" usemap="#map1">
+<map name="map1">
+    <area href="html1.html" shape="rect" coords="138,40,203,124" target="_blank" >
+    <!--shape形状，coords位置（左上右下），target是否再新窗口 -->
+    <area href="html1.html" shape="rect" coords="10,20,30,60" target="_blank">
+</map>
+
+<br/>
+6***********************************************************************************************
+<br/>
+音频播放
+<br/>
+<!--autoplay自动播放 loop循环播放 controls控制进度条 preload="" 预加载 poster="图片地址"默认显示图片 -->
+<audio src="音频地址"></audio>
+<!--支持各种浏览器播放-->
+<audio src="音频地址" height="128px"  >
+    <source src="音频地址mp3" type="audio/mpeg">
+    <source src="音频地址ogg" type="audio/ogg">
+</audio>
+<br/>
+7************************************************************************************************
+<br/>
+视频播放
+<br/>
+<!--autoplay自动播放 controls控制进度条 preload="" 预加载 poster="图片地址"默认显示图片 -->
+<video src="视频地址"></video>
+<!--支持各种浏览器播放-->
+<video src="视频地址" height="128px"  >
+    <source src="MP4视频地址" type="video/mp4">
+    <source src="ogv视频地址" type="video/ogg">
+</video>
+<br/>
+8************************************************************************************************
+<br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+
+</body>
+</html>

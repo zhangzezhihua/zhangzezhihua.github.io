@@ -1,0 +1,29 @@
+
+
+/*
+
+*{!*所有元素 all*!}
+a{!*根据类型选择元素，此仅对a标签影响 <a>*!
+    font-size: 20px;
+    color: blue;
+    font-family: 微软雅黑;
+}
+.class1{!*对类元素影响，类名可自定义，在下面要<a class="class1">*!}
+#id1{!*对ID影响,不建议使用，<a id="id1">*!}
+[herf]{!*也可以[herf="1.html"]对使用此属性的控件影响，<a herf="地址">*!}
+a:hover{!*对该控件的某一动作影响，<a>*!}
+
+*/
+
+
+
+
+
+/*
+常见属性
+对齐文本Text-align
+文本方向Direction
+字母间距，单词间距，行高Letter-spacing  word-spacing:line-height:
+首行缩进
+文本装饰
+文本大小写转换*/
